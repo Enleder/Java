@@ -5,15 +5,15 @@ public class Computadora {
 
     private int idComputadora;
     private String nombre;
-    private monitor monitor;
-    private teclado teclado;
-    private raton raton;
+    private Monitor monitor;
+    private Teclado teclado;
+    private Raton raton;
 
     //Constructor vacio
-    public Computadora(){idComputadora = ++idComputadora};
+    public Computadora(){idComputadora = ++idComputadora;}
 
     //Constructor completo
-    public Computadora(String n, monitor m, teclado t, raton r){
+    public Computadora(String n, Monitor m, Teclado t, Raton r){
         this(); //llamada al constructor por defecto que inicializa el contador de id.
         this.nombre = n;
         this.monitor = m;
@@ -29,15 +29,13 @@ public class Computadora {
         return nombre;
     }
 
-    public monitor getMonitor() {
+    public Monitor getMonitor() {
         return monitor;
     }
 
-    public teclado getTeclado() {
-        return teclado;
-    }
+    public Teclado getTeclado() { return teclado; }
 
-    public raton getRaton() {
+    public Raton getRaton() {
         return raton;
     }
 
@@ -49,15 +47,15 @@ public class Computadora {
         this.nombre = nombre;
     }
 
-    public void setMonitor(monitor monitor) {
+    public void setMonitor(Monitor monitor) {
         this.monitor = monitor;
     }
 
-    public void setTeclado(teclado teclado) {
+    public void setTeclado(Teclado teclado) {
         this.teclado = teclado;
     }
 
-    public void setRaton(raton raton) {
+    public void setRaton(Raton raton) {
         this.raton = raton;
     }
 

@@ -8,8 +8,8 @@ public class Monitor {
     private int contadorMonitores;
 
     public Monitor (){
-        contadorMonitores = ++contadorMonitores
-    };
+        contadorMonitores = ++contadorMonitores;
+    }
 
     public Monitor (String m, double t){
         this();
