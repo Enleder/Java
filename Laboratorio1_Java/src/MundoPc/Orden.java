@@ -16,7 +16,7 @@ public class Orden {
         computadoras = new Computadora[maxComputadoras];
     }
 
-    public agregarComputadora (Computadora c){
+    public void agregarComputadora (Computadora c){
 
         if(contadorComputadoras < maxComputadoras){//Si las computadoras no superan el maximo del arreglo
 
@@ -28,7 +28,7 @@ public class Orden {
         }
     }
 
-    public mostrarOrden(){
+    public void mostrarOrden(){
 
         System.out.println("Numero de orden #" + idOrden);
         System.out.println("Computadoras de la orden #" + idOrden + ":");
@@ -36,6 +36,9 @@ public class Orden {
             System.out.println(computadoras[i]);
         }
     }
+
+
+
 
 
 
