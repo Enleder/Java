@@ -2,7 +2,7 @@ package MundoPc;
 
 public class Orden {
 
-    private int idOrdden;
+    private int idOrden;
     //Declaracion del arreglo de computadoras
     private final Computadora computadoras[];
     private int contadorOrdenes;
@@ -11,7 +11,7 @@ public class Orden {
 
     public Orden() {
 
-        this.idOrdden = ++idOrdden;
+        this.idOrden = ++idOrden;
         //Se instancia el arreglo de computadoras
         computadoras = new Computadora[maxComputadoras];
     }
@@ -24,10 +24,19 @@ public class Orden {
 
         }else {
 
-            system.out.println("Se ha superado el maximo de computadoras: " + maxComputadoras);
+            System.out.println("Se ha superado el maximo de computadoras: " + maxComputadoras);
         }
-
-
     }
+
+    public mostrarOrden(){
+
+        System.out.println("Numero de orden #" + idOrden);
+        System.out.println("Computadoras de la orden #" + idOrden + ":");
+        for (int i = 0; i < contadorComputadoras; i++) {
+            System.out.println(computadoras[i]);
+        }
+    }
+
+
 
 }
